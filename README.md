@@ -1,5 +1,5 @@
 # TP 01 - HTTP : Le jeu de piste
-**Mission 0 : Découverte des outils (Postman, Bruno, Insomnia)**
+**Mission 0 : Découverte des outils (Postman et Bruno)**
 
 **Nom :** Emma-Gabrielle FOUGEROUX
 **Classe :** BTS SIO SLAM 2
@@ -7,10 +7,9 @@
 ---
 
 ## 1. Outils utilisés
-Pour ce TP, j'ai installé et testé trois clients HTTP :
-* **Postman** (nécessite un compte, connecté avec GitHub)
-* **Bruno** (très simple et léger)
-* **Insomnia** (interface claire)
+Pour ce TP, j'ai installé et testé deux clients HTTP :
+* **Postman** : outil complet nécessitant un compte (connecté via GitHub).
+* **Bruno** : client léger, open source et sans compte nécessaire.
 
 ---
 
@@ -19,16 +18,18 @@ Pour ce TP, j'ai installé et testé trois clients HTTP :
 * **URL :** `https://jsonplaceholder.typicode.com/posts`
 * **Méthode :** `GET`
 * **Objectif :** Récupérer la liste des articles.
-* **Code retour :** `200 OK` (la requête a fonctionné).
-* **Réponse :** On reçoit un tableau de données au format JSON avec les posts.
+* **Code retour obtenu :** `200 OK` (requête réussie).
+* **Réponse :** Tableau JSON contenant la liste des articles.
 
 ### Captures d'écran GET :
-* **Postman :**  
-  ![GET Postman](screenshots/postman_get.png)
-* **Bruno :**  
-  ![GET Bruno](screenshots/bruno_get.png)
-* **Insomnia :**  
-  ![GET Insomnia](screenshots/insomnia_get.png)
+
+#### Postman
+![GET Postman](screenshots/postman_get.png)
+![POST Postman](screenshots/postman_post.png)
+
+#### Bruno
+![GET Bruno](screenshots/bruno_get.png)
+![POST Bruno](screenshots/bruno_post.png)
 
 ---
 
@@ -37,10 +38,10 @@ Pour ce TP, j'ai installé et testé trois clients HTTP :
 * **URL :** `https://jsonplaceholder.typicode.com/posts`
 * **Méthode :** `POST`
 * **Header ajouté :** `Content-Type: application/json`
-* **Corps envoyé (Body en JSON) :**
+* **Corps envoyé (Body JSON) :**
 ```json
 {
   "title": "Mon premier post",
-  "body": "Créé avec [Postman/Bruno/Insomnia]",
+  "body": "Créé avec Postman / Bruno",
   "userId": 1
 }

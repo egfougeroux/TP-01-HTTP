@@ -20,7 +20,7 @@ Pour ce TP, j'ai installé et testé trois clients HTTP :
 * **Méthode :** `GET`
 * **Objectif :** Récupérer la liste des articles.
 * **Code retour :** `200 OK` (la requête a fonctionné).
-* **Réponse :** On reçoit un tableau de données au format JSON avec les posts[cite: 10, 18].
+* **Réponse :** On reçoit un tableau de données au format JSON avec les posts.
 
 ### Captures d'écran GET :
 * **Postman :**  
